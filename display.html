@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .main{
+            height: 600px;
+            width: 100%;
+            background-color: blanchedalmond;
+            /* display: flex; */
+            /* justify-content: space-around; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 1fr 160px;
+            row-gap: 10px;
+            column-gap: 15px;
+
+        }
+        .child{
+            /* height: 120px;
+            width: 130px; */
+            background-color: rgb(255, 196, 196);
+        }
+        .abcd{
+            grid-column-start:1 ;
+            grid-column-end:3 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child abcd"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsam mollitia voluptate ad labore libero magni doloribus omnis ratione ipsum, dolore fuga at laboriosam reiciendis, quos, voluptates ipsa aut eaque necessitatibus repudiandae? Ea totam quia nulla accusamus eveniet eaque doloremque cumque adipisci ut sed eligendi harum, illo numquam neque necessitatibus est quis ducimus minus unde. Excepturi reiciendis quia atque illo, necessitatibus sit. Odio, cumque ipsa ex vero consequatur fugiat excepturi accusamus. Natus ad sit nesciunt quisquam, dolores nam fugit, assumenda beatae modi eius consequuntur impedit laudantium suscipit culpa mollitia aut. Nulla perspiciatis fugit aspernatur, tempore consectetur quibusdam temporibus a sequi maiores, in maxime quae magnam, quis praesentium quas quidem atque adipisci? Unde tenetur dolorem quidem illum aliquid amet repellendus eum.</div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>
